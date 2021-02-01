@@ -1,5 +1,6 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
+import BottomTabController_ from "../components/BottomTabController_";
 import { Colors, Dim_ } from "../components/Constants_";
 import {
   Favorites_,
@@ -9,12 +10,20 @@ import {
 
 export default function HomePage_() {
   return (
-    <ScrollView
-      style={{ backgroundColor: Colors.background, width: Dim_.widthWindow }}
-    >
+    <View style={styles.container}>
       <LastListened_ />
       <MostListent_ />
       <Favorites_ />
-    </ScrollView>
+      <BottomTabController_ />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: Colors.background,
+    width: Dim_.widthWindow,
+    flex:1,
+    padding: 8,
+  },
+});

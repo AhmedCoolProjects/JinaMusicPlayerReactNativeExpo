@@ -17,9 +17,11 @@ export const Dim_ = {
   heightWindow: windowHeight,
   textSize: 14,
   titleSize: 20,
+  iconsSize:28,
   textFontWheight: "500",
   titleFontWeight: "700",
   borderRadius: 8,
+  borderRadiusL: 30,
 };
 
 export const Uri = {
