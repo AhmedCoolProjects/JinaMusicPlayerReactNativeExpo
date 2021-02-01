@@ -4,11 +4,11 @@ import { Dim_, Colors } from "./Constants_";
 import { Feather, SimpleLineIcons, AntDesign } from "@expo/vector-icons";
 import { myContext } from "./ContextApiFct_";
 
-export default function BottomTabController_() {
+export default function BottomTabController_({navigation}) {
   const {isOn,setIsOn} = useContext(myContext);
   return (
     <View style={styles.container}>
-      <SimpleLineIcons style={styles.icons_1} name="playlist" />
+      <SimpleLineIcons onPress={() => navigation.navigate('List Music')} style={styles.icons_1} name="playlist" />
       <AntDesign style={styles.icons_} name="leftcircleo" />
       {isOn ? (
         <Feather onPress={()=>setIsOn(false)} style={styles.icons_} name="pause-circle" />

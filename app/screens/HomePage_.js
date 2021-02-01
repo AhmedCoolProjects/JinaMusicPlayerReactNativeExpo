@@ -8,13 +8,13 @@ import {
   MostListent_,
 } from "../components/SugitionsHome_";
 
-export default function HomePage_() {
+export default function HomePage_({navigation}) {
   return (
     <View style={styles.container}>
       <LastListened_ />
       <MostListent_ />
       <Favorites_ />
-      <BottomTabController_ />
+      <BottomTabController_ navigation={navigation} />
     </View>
   );
 }

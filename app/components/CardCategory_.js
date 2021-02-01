@@ -1,8 +1,8 @@
 import React from "react";
-import { View, Text, Image, ImageBackground, StyleSheet } from "react-native";
+import { View, Text, ImageBackground, StyleSheet } from "react-native";
 import { Colors, Dim_, Uri } from "./Constants_";
 
-export default function CardCategory_() {
+export default function CardCategory_({navigation}) {
   const cardDim_ = Dim_.widthWindow / 3 - 3;
   return (
     <View
