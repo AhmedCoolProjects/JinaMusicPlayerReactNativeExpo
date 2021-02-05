@@ -11,9 +11,9 @@ import {
 export default function HomePage_({navigation}) {
   return (
     <View style={styles.container}>
-      <LastListened_ />
-      <MostListent_ />
-      <Favorites_ />
+      <LastListened_ navigation={navigation} />
+      <MostListent_ navigation={navigation}/>
+      <Favorites_ navigation={navigation}/>
       <BottomTabController_ navigation={navigation} />
     </View>
   );

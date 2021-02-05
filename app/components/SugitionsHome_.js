@@ -3,27 +3,27 @@ import { View, Text, StyleSheet } from "react-native";
 import { Colors, Dim_ } from "./Constants_";
 import TopTabScrollingHorizontal_ from "./TopTabScrollingHorizontal_";
 
-export function LastListened_() {
+export function LastListened_({navigation}) {
   return (
     <View>
       <Text style={styles.catygoryTitle}>Last Listent</Text>
-      <TopTabScrollingHorizontal_  />
+      <TopTabScrollingHorizontal_ navigation={navigation} />
     </View>
   );
 }
-export function MostListent_() {
+export function MostListent_({navigation}) {
   return (
     <View>
       <Text style={styles.catygoryTitle}>Most Listent</Text>
-      <TopTabScrollingHorizontal_ />
+      <TopTabScrollingHorizontal_ navigation={navigation}/>
     </View>
   );
 }
-export function Favorites_() {
+export function Favorites_({navigation}) {
   return (
     <View>
       <Text style={styles.catygoryTitle}>Favorites</Text>
-      <TopTabScrollingHorizontal_ />
+      <TopTabScrollingHorizontal_ navigation={navigation}/>
     </View>
   );
 }
